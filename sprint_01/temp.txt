@@ -1,0 +1,227 @@
+Introduction
+Welcome to the Basic Python sprint! In this sprint, you’ll learn how to code using the Python programming language. 
+Don’t worry if you’ve never programmed before, because this sprint will teach you all the basic principles of programming starting from scratch.
+
+In the next sprint, you’ll continue building your Python skills and learn how to apply Python to work with real data. 
+By the end of the two sprints, you’ll be able to write complex Python code that performs all sorts of data processing and analysis tasks!
+
+Python is one of the most popular programming languages in the world, especially for data professionals. As you progress through this sprint, you’ll learn about Python from the very beginning and slowly expand your skill set, using Python to complete every single one of your tasks.
+
+What makes Python special?
+A lot of people like Python because its syntax feels natural. In other words, the way we write instructions in Python feels kind of like how we’d say them in conversation. You'd have some trouble finding a more concise tool for expressing rules and instructions.
+
+Python is also popular because of its flexibility and versatility. Want to send scheduled emails, collect data from a social network, or get texts from websites? Python has ready-made solutions and tools for almost any task. It’s also constantly being improved and growing, making it dynamic and able to tackle a wide range of challenges.
+
+Because of these advantages, Python is used in a number of fields: web and game development, machine learning, data analysis, data management, and many more. Even popular websites like Instagram, Facebook, Spotify, Pinterest, and Netflix were partially written in Python.
+
+In other words, mastery of Python means job opportunities. Right now at indeed.com, there are well over a hundred thousand jobs listing Python as a requirement!
+
+What you’ll learn in this sprint
+Here are some of the key Python and programming concepts that you’ll learn about in this sprint:
+
+How to store data in a variable for later use
+How to perform numeric calculations
+How to work with text data
+How to create data structures: lists and tuples
+How to write code that makes decisions
+While some of these terms may not mean much to you now, they sure will by the time you finish this sprint.
+
+What you’ll learn in the first chapter
+This chapter will explain the Python language basics that you’ll need for this course and in your future career.
+
+By the end of the chapter, you’ll be able to write Python code to print information to your screen, store data in variables, and perform simple mathematical calculations — all very important skills for any data job. You’ll also learn about Python data types and how to handle errors in your code.
+
+All in all, you can expect this chapter to take around 2 to 3.5 hours to complete.
+
+So, are you ready for your first chapter? Let’s dive in!
+
+
+--------------------------------------------------------------------------------
+
+Printing
+We’ll begin our Python journey by learning how to display information on the computer screen with the built-in Python print() function. You, or anyone who runs your code, can use printing to keep track of what your program is doing. By the end of this lesson, you’ll be able to use the print() function to display text and numeric information.
+
+The print() function
+Python has a built-in function called print(). We’ll learn more about functions later in the sprint, but for now, let’s just focus on how to use print() in our code.
+
+When we call a function in our code, the values we place within the parentheses are called arguments. The print() function displays to the screen the values of whatever arguments we pass to it.
+
+It’s a right of passage for every new programmer to learn how to print 'Hello, world!' in whatever programming language they’re learning. We can do this in Python by passing the text 'Hello, world!' to the print() function:
+
+print('Hello, world!')
+Hello, world!
+The print() function can accept any type of value as input: text, numbers, and other kinds of data are all allowed. It can also accept any number of inputs, which we separate using commas. By default, print() separates each input by a space.
+
+Examine the following code and then run it to see what happens.
+
+print("Max's favorite color is", "...", "blue.")
+
+To print text, we have to surround it with either single or double quotation marks; otherwise, Python won’t know what to do with it. It doesn’t matter whether we use single or double quotes, but we used double quotes above because the text contained a single quote character (the apostrophe in Max's). Notice that print() displays the text without quotation marks, though. 
+
+We can also print numeric values by simply passing the value to print():
+
+print(12.7)
+12.7
+Finally, we can print a combination of text and numbers by passing them as separate values:
+
+print('I once heard that', 1, '+', 2, '=', 3)
+I once heard that 1 + 2 = 3
+Line breaks
+Each time the print() function is called, its contents are printed on a new line. If we call print() with no arguments at all, it will simply display a blank line by itself.
+
+Run the following code to see how it works.
+
+print("Max's favorite number is...")
+print()
+print(3)
+
+Question
+
+What will the following code display on your screen?
+print('The sign says "STRAWBERRIES', 2, "FOR", '1!!"')
+The sign says "STRAWBERRIES 2 FOR 1!!"
+You can print pretty much anything in Python.
+
+-------------------------------------------------------------------------------------
+
+
+Comments
+Before we go deeper into all things Python, we should talk about comments. Comments are bits of text that we write in our code for other people to read but are totally ignored when we run that code.
+
+At TripleTen, we always strive to use best coding practices, and leaving comments in your code is one of these practices. Good comments are important because they help other people understand our code, including our future selves! When we’re debugging our code, comments can also be used to add or remove certain lines to help us troubleshoot.
+
+By the end of this lesson, you’ll be able to write informative comments and use them to comment out parts of your code that you don’t want to run. You’ll also be able to explain when and how to write helpful comments.
+
+Writing comments
+Most comments are brief single lines of text that either explain the code below or the code in-line:
+
+# Print some letters of the alphabet
+print('A')
+print('B')
+print('D') # skip C
+A
+B
+D
+Comments are designated by the # symbol. Everything that comes after # on that line is considered a comment and is completely ignored when we run our code.
+
+The above code provides an example of good comments. The first comment explains why we wrote the block of code below it. The second comment ensures that other people know we meant to print A → B → D. It’s not a bug!
+
+We can also use comments to “comment out” certain lines of code when we want to compare our results with and without those lines. Run the code below and play around with commenting/uncommenting different lines to see how it affects the output.
+
+print("Hello!")
+print("How")
+print("are")
+print("you?")
+
+As you continue to progress through TripleTen courses, you’ll notice lots of comments in our code. Often, we use comments in the task precode, quizzes, and other exercises to help give you hints and tell you where to write your code. Now when you see them, you’ll know what they are!
+
+Question
+
+What will the following code display on your screen?
+
+# Welcome message
+print('Welcome message:')
+#print("Welcome to coding in Python with TripleTen!")
+Welcome message:
+Only the uncommented line of code is executed.
+
+----------------------------------------------------------
+
+Variables
+In an earlier lesson, we printed 'Hello, world!' to the screen by passing that value directly to the print() function. Instead, we could have stored 'Hello, world!' in a variable, then used that variable to print the message:
+
+message = 'Hello, world!'
+print(message)
+Hello, world!
+In this lesson, you’ll learn about the variables included in Python and how to use them in your code. By the end of this lesson, you’ll be able to explain what variables are and how to create them with proper syntax. You’ll also be able to assign different values to a variable and use variables after you create them. Storing data in variables is essential for writing clean and efficient code, so let’s get started!
+
+Creating variables
+In programming languages, variables act as containers for other values (text, numbers, etc.). Using variables allows us to save those values for easy reference later.
+
+For example, what if we want to work with the first 100 digits of pi? It would be such a chore to type that number every time we wanted to use it, not to mention that we’d likely make a few mistakes here and there. Instead, we can create a variable to store that number once and then refer to that variable’s name to use the value later in our code:
+
+pi = 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
+print(pi + 1)
+4.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
+In the example above, we named our variable pi and used the assignment operator = to store our value in the variable. In other words, we assigned the value 3.14159… to the variable pi. We then used pi to perform a calculation. We only needed to type the value once — how convenient!
+
+In Python, we can’t create a variable without assigning it an initial value. To do this, we just have to write our variable name followed by the assignment operator =, and then the value that we want the variable to store.
+
+Assigning a variable
+
+If we place the variable inside the parentheses of the print() command and run the code, the value of the variable will be displayed on the screen. In programming terms, this is called passing the variable to the print() function:
+
+person = 'Maxwell'
+print(person)
+Maxwell
+Notice that all the variable names we’ve used so far are descriptive. You should always strive to use descriptive variable names so that other people who read your code (including future you) can easily infer the meaning of the values that the variables store.
+
+Changing the value of a variable
+Variables are called variables because the values they store can change. To change the value of a variable, simply reassign a new value to that existing variable:
+
+person = 'Maxwell'
+print(person)
+
+person = 'Max'
+print(person)
+Maxwell
+Max
+It’s important to know that reassigning a variable means that its old value is deleted. Now that person contains 'Max', the old value 'Maxwell' can no longer be accessed in future lines of code.
+
+Now it’s your turn. The variable pets stores the number of pets Max has:
+
+pets = 2
+But Max has adopted two new cats from the animal shelter. Reassign the pets variable so that the code below prints 4.
+
+pets = 2
+pets = 4
+print(pets)
+
+So far, we’ve created variables by directly assigning values to them. But we can also create new variables using other variables.
+
+Question
+
+What do you think this code will display on the screen?
+
+first_variable = 42
+second_variable = first_variable
+print(second_variable)
+42
+That’s right, the value of second_variable becomes the value of first_variable.
+
+Variable syntax
+Syntax refers to the rules for how code is written and interpreted. If your code does not have proper syntax, you’ll probably get an error when you run it. Python has the following syntax rules for naming variables:
+
+Variable names can only begin with letters or the underscore character _.
+Variable names can only contain letters, numbers, and underscores. Other special characters are not allowed.
+Question
+
+Which of the following variable names violate the Python syntax rules? Select all that apply.
+
+2supermario
+Variable names in Python cannot begin with a number.
+
+super-mario
+This isn’t allowed because it contains the special character -.
+
+mario*bros
+This isn’t allowed because it contains the special character *.
+
+Another important aspect of variable syntax in Python is that their names are case-sensitive. For example, Python would consider the variable My_Var to be a different variable than one named my_var.
+
+Question
+
+What do you think this code will print on the screen?
+
+My_Var = 'oh hi'
+my_var = 'heeey'
+print(My_Var)
+
+Variables are such an integral part of coding that you’ll be using them pretty much all the time from here on out. So, let’s get a little more practice before moving on to the next lesson.
+
+The code below contains two variables, one with the name of Steven Spielberg’s first movie and one with the year that movie was released. Use the variables provided inside the print() function to print out this exact message: Steven Spielberg's first movie was Firelight in 1964.
+
+first_movie_title = 'Firelight'
+first_movie_year = 1964
+
+print("Steven Spielberg's first movie was", first_movie_title, "in", first_movie_year) # write your code inside this print() function
