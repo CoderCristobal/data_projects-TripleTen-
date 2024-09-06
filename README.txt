@@ -12,4 +12,4 @@ Sure Tomorrow Prediction Model: https://github.com/CoderCristobal/data_projects-
 Rusty Bargain Prediction Model: https://github.com/CoderCristobal/data_projects-TripleTen-/tree/main/sprint_12
 Sweet Lift Taxi Timeseries Model: https://github.com/CoderCristobal/data_projects-TripleTen-/tree/main/sprint_13
 Film Junkie Union Text Model: https://github.com/CoderCristobal/data_projects-TripleTen-/tree/main/sprint_14
-Final Project: 
+Final Project: https://github.com/CoderCristobal/data_projects-TripleTen-/tree/main/final
